@@ -1,13 +1,15 @@
 # Heroku Cloud Native Buildpacks: Node.js
 
-[![Cloud Native Buildpacks Registry: heroku/nodejs][registry-badge]][registry-url]
-[![CI on Github Actions: heroku/nodejs][ci-badge]][ci-url]
+[![Cloud Native Buildpacks Registry:
+heroku/nodejs][registry-badge]][registry-url] [![CI on Github Actions:
+heroku/nodejs][ci-badge]][ci-url]
 
 ![Heroku Cloud Native Buildpack: heroku/nodejs][cnb-banner]
 
-This repository is the home of [Heroku Cloud Native Buildpacks][heroku-buildpacks]
-for Node.js applications. These buildpacks build Node.js application source code
-into application images with minimal configuration.
+This repository is the home of [Heroku Cloud Native
+Buildpacks][heroku-buildpacks] for Node.js applications. These buildpacks build
+Node.js application source code into application images with minimal
+configuration.
 
 > [!IMPORTANT]
 > This is a collection of [Cloud Native Buildpacks][cnb], and is a component of the [Heroku Cloud Native Buildpacks][heroku-buildpacks] project, which is in preview. If you are instead looking for the Heroku Classic Buildpack for Node.js (for use on the Heroku platform), you may find it [here][classic-buildpack].
@@ -32,8 +34,8 @@ docker run --rm -it -e "PORT=8080" -p 8080:8080 sample-app
 
 ## Application Requirements
 
-The `heroku/nodejs` buildpack requires a valid `package.json` to be present
-to build.
+The `heroku/nodejs` buildpack requires a valid `package.json` to be present to
+build.
 
 In order to install dependencies, a vaild `npm`, `yarn`, or `pnpm` lockfile must
 be present.
@@ -57,8 +59,8 @@ For example, to select the latest releasse in the Node.js 20 line, modify your
 
 This field supports the same semantic versioning syntax as `package.json`.
 
-If no Node.js version is specified, the latest LTS version will be used.
-We highly suggest specifying a version to prevent surprise changes.
+If no Node.js version is specified, the latest LTS version will be used. We
+highly suggest specifying a version to prevent surprise changes.
 
 ## Included Buildpacks
 
@@ -82,7 +84,8 @@ functionality of the independent buildpacks.
 
 ## Contributing
 
-Issues and pull requests are welcome. See our [contributing guidelines](./CONTRIBUTING.md) if you would like to help.
+Issues and pull requests are welcome. See our [contributing
+guidelines](./CONTRIBUTING.md) if you would like to help.
 
 
 [ci-badge]: https://github.com/heroku/buildpacks-nodejs/actions/workflows/ci.yml/badge.svg
